@@ -1,16 +1,14 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
+import { FaLocationArrow } from "react-icons/fa6";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
     <div className="text-white py-20">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        A small selection of <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -19,19 +17,19 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+              title={item.title} // Dynamically render project title
+              href={item.liveUrl} // Dynamically render the live URL
             >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img src="/bg.png" alt={`${item.title} background`} />
                 </div>
                 <img
                   src={item.img}
-                  alt="cover"
+                  alt={`${item.title} cover`}
                   className="z-10 absolute bottom-0"
                 />
               </div>
@@ -57,10 +55,10 @@ const RecentProjects = () => {
                       key={index}
                       className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
+                        transform: `translateX(-${index * 10}px)`, // Adjusted spacing for better responsiveness
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt={`${item.title} icon`} className="p-2" />
                     </div>
                   ))}
                 </div>
