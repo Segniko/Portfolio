@@ -104,81 +104,47 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
+export const certificates = [
   {
-    quote:
-      "Collaborating with Segni was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Segni's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Segni is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "Certificate in Software Engineering",
+    institution: "ALX Software Engineering Program",
+    date: "October 2024",
+    image: "ALX_Certificate.png", // Use relative path from public
   },
   {
-    quote:
-      "Collaborating with Segni was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Segni's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Segni is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director",
+    title: "Advanced Software Engineering Job Simulation",
+    institution: "Walmart Global Tech",
+    date: "October 2024",
+    image: "Completion_Certificate.png", // Use relative path from public
   },
   {
-    quote:
-      "Collaborating with Segni was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Segni's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Segni is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director",
+    title: "Responsive Web Design",
+    institution: "freeCodeCamp",
+    date: "June 2023",
+    image: "Responsive_Web_Design.png", // Use relative path from public
   },
   {
-    quote:
-      "Collaborating with Segni was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Segni's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Segni is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director",
-  },
-  {
-    quote:
-      "Collaborating with Segni was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Segni's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Segni is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director",
-  },
-];
-
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    title: "Legacy JavaScript Algorithms and Data Structures",
+    institution: "freeCodeCamp",
+    date: "July 2023",
+    image: "Legacy_JavaScript_Algorithms_and_Data_Structures.png", // Use relative path from public
   },
 ];
 
 export const socialMedia = [
-  {
+  {   
     id: 1,
-    img: "/git.svg",
+    img: "/git.svg", // GitHub icon
+    link: "https://github.com/Segniko", // GitHub account
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/insta.svg", // Instagram logo (replace with appropriate Instagram image)
+    link: "https://www.instagram.com/codee_captain/profilecard/?igsh=MTZuNzdwczF3d2xpMg==", // Instagram account
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/link.svg", // LinkedIn icon
+    link: "https://www.linkedin.com/in/segni-assaye-38055a283/", // LinkedIn account
   },
 ];

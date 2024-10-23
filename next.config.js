@@ -5,7 +5,10 @@ const nextConfig = {
   output: 'export',
   typescript: {
     ignoreBuildErrors: true,
-  }
+  },
+  images: {
+    unoptimized: true, // Disable image optimization
+  },
 };
 
 module.exports = withSentryConfig(

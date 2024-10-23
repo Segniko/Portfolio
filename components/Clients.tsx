@@ -1,25 +1,21 @@
 "use client";
 
-import React from "react";
-
-import {testimonials } from "@/data";
+import { certificates } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
 const Clients = () => {
   return (
-    <section id="testimonials" className=" text-white py-20">
+    <section id="certificates" className="text-white py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        My
+        <span className="text-purple"> Certificates</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
-        <div
-          // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
-          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
-        >
+        {/* Increase the height here to make it larger vertically */}
+        <div className="h-[70vh] md:h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
-            items={testimonials}
+            items={certificates}
             direction="right"
             speed="slow"
           />
